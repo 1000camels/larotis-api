@@ -2,14 +2,14 @@
 /**
  * Boot the API and add our routes.
  *
- * @package   calderawp\calderawp_api
+ * @package   larotis\larotis_api
  * @author    Josh Pollock <Josh@JoshPress.net>
  * @license   GPL-2.0+
  * @link      
  * @copyright 2015 Josh Pollock
  */
 
-namespace calderawp\calderawp_api;
+namespace larotis\larotis_api;
 
 
 class boot {
@@ -42,7 +42,7 @@ class boot {
 		 * Product endpoints
 		 */
 		$base = "{$root}/{$version}/products";
-		$cb_class = new \calderawp\calderawp_api\routes\products( 'download', $base );
+		$cb_class = new \larotis\larotis_api\routes\products( 'download', $base );
 
 		/**
 		 * Single product query
@@ -180,7 +180,7 @@ class boot {
 		 * Docs Endpoints
 		 */
 		$base = "{$root}/{$version}/docs";
-		$cb_class = new \calderawp\calderawp_api\routes\docs( 'doc', $base );
+		$cb_class = new \larotis\larotis_api\routes\docs( 'doc', $base );
 
 		/**
 		 * Single product documentation
@@ -237,7 +237,7 @@ class boot {
 		/**
 		 * Utility endpoints
 		 */
-		$cb_class = new \calderawp\calderawp_api\routes\util();
+		$cb_class = new \larotis\larotis_api\routes\util();
 		/**
 		 * Docs for all products or a specific product by slug/ID
 		 */

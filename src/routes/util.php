@@ -9,7 +9,7 @@
  * @copyright 2015 Josh Pollock
  */
 
-namespace calderawp\calderawp_api\routes;
+namespace larotis\larotis_api\routes;
 
 
 class util {

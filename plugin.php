@@ -1,10 +1,10 @@
 <?php
 /**
-Plugin Name: CalderaWP API
+ * Plugin Name: Larotisserie API
  */
 add_action( 'plugins_loaded', function() {
 	spl_autoload_register( function ( $class ) {
-		$prefix = 'calderawp\\calderawp_api\\';
+		$prefix = 'larotis\\larotis_api\\';
 		$base_dir = dirname( __FILE__ ) . '/src/' ;
 		$len = strlen($prefix);
 		if (strncmp($prefix, $class, $len) !== 0) {
@@ -20,9 +20,9 @@ add_action( 'plugins_loaded', function() {
 	});
 
 
-	$api_namespace = 'calderawp_api';
+	$api_namespace = 'larotis_api';
 	$version = 'v2';
-	new \calderawp\calderawp_api\boot( $api_namespace, $version );
+	new \larotis\larotis_api\boot( $api_namespace, $version );
 
 
 });

@@ -2,14 +2,14 @@
 /**
  * Endpoints for products.
  *
- * @package   calderawp\calderawp_api\
+ * @package   larotis\larotis_api\
  * @author    Josh Pollock <Josh@JoshPress.net>
  * @license   GPL-2.0+
  * @link      
  * @copyright 2015 Josh Pollock
  */
 
-namespace calderawp\calderawp_api\routes;
+namespace larotis\larotis_api\routes;
 
 
 class products extends endpoints {

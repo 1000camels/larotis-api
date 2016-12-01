@@ -2,17 +2,17 @@
 /**
  * Base class for our endpoints.
  *
- * @package   calderawp\calderawp_api\
+ * @package   larotis\larotis_api\
  * @author    Josh Pollock <Josh@JoshPress.net>
  * @license   GPL-2.0+
  * @link      
  * @copyright 2015 Josh Pollock
  */
 
-namespace calderawp\calderawp_api\routes;
+namespace larotis\larotis_api\routes;
 
 
-abstract class endpoints extends \WP_REST_Posts_Controller {
+abstract class endpoints extends \WC_REST_Orders_Controller {
 	/**
 	 * @param string $post_type Name of post type this route is for.
 	 * @param string $base Base URL for this API.
@@ -33,7 +33,7 @@ abstract class endpoints extends \WP_REST_Posts_Controller {
 	 *
 	 * @return array
 	 */
-	protected function query_args( $params ) {
+	public function query_args( $params ) {
 
 		$per_page = $params['per_page'];
 
